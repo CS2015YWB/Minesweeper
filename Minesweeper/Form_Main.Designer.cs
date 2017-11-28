@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Main));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MenuStrip_Main = new System.Windows.Forms.MenuStrip();
             this.游戏GToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.新游戏NToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -54,22 +54,22 @@
             this.Label_Mine = new System.Windows.Forms.Label();
             this.Label_Timer = new System.Windows.Forms.Label();
             this.Timer_Main = new System.Windows.Forms.Timer(this.components);
-            this.menuStrip1.SuspendLayout();
+            this.MenuStrip_Main.SuspendLayout();
             this.TableLayoutPanel_Main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Mine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Timer)).BeginInit();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // MenuStrip_Main
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuStrip_Main.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.游戏GToolStripMenuItem,
             this.帮助HToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(527, 25);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.MenuStrip_Main.Location = new System.Drawing.Point(0, 0);
+            this.MenuStrip_Main.Name = "MenuStrip_Main";
+            this.MenuStrip_Main.Size = new System.Drawing.Size(527, 25);
+            this.MenuStrip_Main.TabIndex = 0;
+            this.MenuStrip_Main.Text = "menuStrip1";
             // 
             // 游戏GToolStripMenuItem
             // 
@@ -95,82 +95,90 @@
             // 新游戏NToolStripMenuItem
             // 
             this.新游戏NToolStripMenuItem.Name = "新游戏NToolStripMenuItem";
-            this.新游戏NToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.新游戏NToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.新游戏NToolStripMenuItem.Text = "新游戏(&N)";
+            this.新游戏NToolStripMenuItem.Click += new System.EventHandler(this.新游戏NToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(127, 6);
             // 
             // 新手BToolStripMenuItem
             // 
             this.新手BToolStripMenuItem.Name = "新手BToolStripMenuItem";
-            this.新手BToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.新手BToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.新手BToolStripMenuItem.Text = "新手(&B)";
+            this.新手BToolStripMenuItem.Click += new System.EventHandler(this.新手BToolStripMenuItem_Click);
             // 
             // 中等iToolStripMenuItem
             // 
             this.中等iToolStripMenuItem.Name = "中等iToolStripMenuItem";
-            this.中等iToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.中等iToolStripMenuItem.Text = "一般(&I)";
+            this.中等iToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.中等iToolStripMenuItem.Text = "中等(&I)";
             this.中等iToolStripMenuItem.Click += new System.EventHandler(this.中等iToolStripMenuItem_Click);
             // 
             // 专家EToolStripMenuItem
             // 
             this.专家EToolStripMenuItem.Name = "专家EToolStripMenuItem";
-            this.专家EToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.专家EToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.专家EToolStripMenuItem.Text = "专家(&E)";
+            this.专家EToolStripMenuItem.Click += new System.EventHandler(this.专家EToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(127, 6);
             // 
             // 设置SToolStripMenuItem
             // 
             this.设置SToolStripMenuItem.Name = "设置SToolStripMenuItem";
-            this.设置SToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.设置SToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.设置SToolStripMenuItem.Text = "设置(&S)";
+            this.设置SToolStripMenuItem.Click += new System.EventHandler(this.设置SToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(127, 6);
             // 
             // 标记MToolStripMenuItem
             // 
             this.标记MToolStripMenuItem.Name = "标记MToolStripMenuItem";
-            this.标记MToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.标记MToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.标记MToolStripMenuItem.Text = "标记(&M)";
+            this.标记MToolStripMenuItem.Click += new System.EventHandler(this.标记MToolStripMenuItem_Click);
             // 
             // 音效AToolStripMenuItem
             // 
             this.音效AToolStripMenuItem.Name = "音效AToolStripMenuItem";
-            this.音效AToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.音效AToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.音效AToolStripMenuItem.Text = "音效(&M)";
+            this.音效AToolStripMenuItem.Click += new System.EventHandler(this.音效AToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(127, 6);
             // 
             // 排行RToolStripMenuItem
             // 
             this.排行RToolStripMenuItem.Name = "排行RToolStripMenuItem";
-            this.排行RToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.排行RToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.排行RToolStripMenuItem.Text = "排行(&R)";
+            this.排行RToolStripMenuItem.Click += new System.EventHandler(this.排行RToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(127, 6);
             // 
             // 退出XToolStripMenuItem
             // 
             this.退出XToolStripMenuItem.Name = "退出XToolStripMenuItem";
-            this.退出XToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.退出XToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.退出XToolStripMenuItem.Text = "退出(X)";
+            this.退出XToolStripMenuItem.Click += new System.EventHandler(this.退出XToolStripMenuItem_Click);
             // 
             // 帮助HToolStripMenuItem
             // 
@@ -183,8 +191,9 @@
             // 关于AToolStripMenuItem
             // 
             this.关于AToolStripMenuItem.Name = "关于AToolStripMenuItem";
-            this.关于AToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.关于AToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.关于AToolStripMenuItem.Text = "关于(A)";
+            this.关于AToolStripMenuItem.Click += new System.EventHandler(this.关于AToolStripMenuItem_Click_1);
             // 
             // TableLayoutPanel_Main
             // 
@@ -197,13 +206,13 @@
             this.TableLayoutPanel_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TableLayoutPanel_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.TableLayoutPanel_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.TableLayoutPanel_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.TableLayoutPanel_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.TableLayoutPanel_Main.Controls.Add(this.PictureBox_Mine, 1, 0);
             this.TableLayoutPanel_Main.Controls.Add(this.PictureBox_Timer, 7, 0);
             this.TableLayoutPanel_Main.Controls.Add(this.Label_Mine, 3, 0);
             this.TableLayoutPanel_Main.Controls.Add(this.Label_Timer, 5, 0);
             this.TableLayoutPanel_Main.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.TableLayoutPanel_Main.Location = new System.Drawing.Point(0, 322);
+            this.TableLayoutPanel_Main.Location = new System.Drawing.Point(0, 355);
             this.TableLayoutPanel_Main.Name = "TableLayoutPanel_Main";
             this.TableLayoutPanel_Main.RowCount = 1;
             this.TableLayoutPanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -213,20 +222,24 @@
             // PictureBox_Mine
             // 
             this.PictureBox_Mine.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PictureBox_Mine.BackgroundImage")));
+            this.PictureBox_Mine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBox_Mine.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PictureBox_Mine.Location = new System.Drawing.Point(35, 3);
             this.PictureBox_Mine.Name = "PictureBox_Mine";
             this.PictureBox_Mine.Size = new System.Drawing.Size(42, 42);
+            this.PictureBox_Mine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.PictureBox_Mine.TabIndex = 0;
             this.PictureBox_Mine.TabStop = false;
             // 
             // PictureBox_Timer
             // 
             this.PictureBox_Timer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PictureBox_Timer.BackgroundImage")));
+            this.PictureBox_Timer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBox_Timer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PictureBox_Timer.Location = new System.Drawing.Point(449, 3);
             this.PictureBox_Timer.Name = "PictureBox_Timer";
             this.PictureBox_Timer.Size = new System.Drawing.Size(42, 42);
+            this.PictureBox_Timer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.PictureBox_Timer.TabIndex = 1;
             this.PictureBox_Timer.TabStop = false;
             // 
@@ -259,6 +272,7 @@
             // Timer_Main
             // 
             this.Timer_Main.Interval = 1000;
+            this.Timer_Main.Tick += new System.EventHandler(this.Timer_Main_Tick);
             // 
             // Form_Main
             // 
@@ -266,17 +280,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(527, 370);
+            this.ClientSize = new System.Drawing.Size(527, 403);
             this.Controls.Add(this.TableLayoutPanel_Main);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.MenuStrip_Main);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.MenuStrip_Main;
             this.MaximizeBox = false;
             this.Name = "Form_Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "扫雷";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form_Main_Paint);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_Main_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form_Main_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form_Main_MouseUp);
+            this.MenuStrip_Main.ResumeLayout(false);
+            this.MenuStrip_Main.PerformLayout();
             this.TableLayoutPanel_Main.ResumeLayout(false);
             this.TableLayoutPanel_Main.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Mine)).EndInit();
@@ -288,7 +307,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip MenuStrip_Main;
         private System.Windows.Forms.ToolStripMenuItem 游戏GToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 新游戏NToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
@@ -312,6 +331,7 @@
         private System.Windows.Forms.Label Label_Mine;
         private System.Windows.Forms.Label Label_Timer;
         private System.Windows.Forms.Timer Timer_Main;
+        private object 音效MToolStripMenuItem;
     }
 }
 
